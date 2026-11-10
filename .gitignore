@@ -3,3 +3,4 @@ dist/
 test-files/
 *.local
 .DS_Store
+*.tsbuildinfo
