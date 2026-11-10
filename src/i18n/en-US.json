@@ -1,0 +1,12 @@
+{
+  "app": { "name": "PaoMaMa", "slogan": "Right rhythm, longer distance" },
+  "nav": { "home": "Home", "converter": "Convert", "cadence": "Cadence", "editor": "Editor", "reminder": "Reminder", "library": "Library", "player": "Player", "settings": "Settings" },
+  "home": { "welcome": "Welcome to PaoMaMa", "subtitle": "Smart music training platform for marathon runners", "quickStart": "Quick Start", "recentPlay": "Recent" },
+  "converter": { "title": "Format Converter", "dropHere": "Drop files here", "selectFiles": "Select Files", "outputFormat": "Output Format", "convert": "Convert", "downloading": "Downloading" },
+  "cadence": { "title": "Cadence Metronome", "targetSPM": "Target SPM", "mode": "Match Mode", "follow": "Follow", "force": "Force", "gradient": "Gradient", "overlay": "Overlay", "replace": "Replace", "beatSound": "Beat Sound", "start": "Start", "stop": "Stop" },
+  "editor": { "title": "Marathon Editor", "addTrack": "Add Track", "smartArrange": "Smart Arrange", "export": "Export", "targetDuration": "Target Duration", "timeNodes": "Time Nodes", "interval": "Interval" },
+  "reminder": { "title": "Pacer Reminder", "addReminder": "Add Reminder", "pacePlan": "Pace Plan", "fuelPlan": "Fuel Plan", "preset": "Preset", "marathon3h": "FM 3h", "marathon4h": "FM 4h", "marathon5h": "FM 5h", "halfMarathon2h": "HM 2h" },
+  "library": { "title": "Library", "import": "Import", "allSongs": "All Songs", "playlists": "Playlists", "sortByBPM": "Sort by BPM", "unknownBPM": "Unknown BPM" },
+  "player": { "nowPlaying": "Now Playing", "next": "Next", "prev": "Previous", "shuffle": "Shuffle", "loop": "Loop", "sequential": "Sequential" },
+  "settings": { "title": "Settings", "theme": "Theme", "darkRunner": "Dark Runner", "lightRunner": "Light Runner", "nightHighContrast": "Night High Contrast", "language": "Language", "powerSave": "Power Save", "backup": "Backup", "exportBackup": "Export Backup", "importBackup": "Import Backup", "storage": "Storage" }
+}

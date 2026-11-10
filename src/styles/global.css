@@ -1,0 +1,182 @@
+@unocss all;
+
+/* ===== 跑马吗 Design System - 红白运动风格 ===== */
+
+:root {
+  /* Primary: 鲜红 - 源自logo */
+  --runner-primary: #E53935;
+  --runner-primary-light: #FF5252;
+  --runner-primary-dark: #C62828;
+  --runner-primary-50: rgba(229, 57, 53, 0.05);
+  --runner-primary-100: rgba(229, 57, 53, 0.1);
+  --runner-primary-200: rgba(229, 57, 53, 0.2);
+
+  /* Accent: 速度橙 */
+  --runner-accent: #FF6D00;
+  --runner-accent-light: #FF9100;
+
+  /* Success: 完赛绿 */
+  --runner-success: #00C853;
+
+  /* Light Theme (Default) - 红白主调 */
+  --runner-bg: #FAFAFA;
+  --runner-bg-subtle: #F5F5F5;
+  --runner-surface: #FFFFFF;
+  --runner-surface-elevated: #FFFFFF;
+  --runner-text: #1A1A1A;
+  --runner-text-secondary: #4A4A4A;
+  --runner-text-muted: #8A8A8A;
+  --runner-border: #E8E8E8;
+  --runner-border-light: #F0F0F0;
+  --runner-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --runner-shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --runner-shadow-lg: 0 10px 24px rgba(0,0,0,0.1);
+  --runner-shadow-primary: 0 4px 14px rgba(229,57,53,0.25);
+  --runner-gradient: linear-gradient(135deg, #E53935 0%, #FF5252 100%);
+  --runner-gradient-warm: linear-gradient(135deg, #E53935 0%, #FF6D00 100%);
+}
+
+/* Dark Runner Theme */
+[data-theme="darkRunner"] {
+  --runner-bg: #0F0F0F;
+  --runner-bg-subtle: #1A1A1A;
+  --runner-surface: #1E1E1E;
+  --runner-surface-elevated: #262626;
+  --runner-text: #F5F5F5;
+  --runner-text-secondary: #B0B0B0;
+  --runner-text-muted: #707070;
+  --runner-border: #2E2E2E;
+  --runner-border-light: #252525;
+  --runner-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --runner-shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --runner-shadow-lg: 0 10px 24px rgba(0,0,0,0.5);
+  --runner-shadow-primary: 0 4px 14px rgba(229,57,53,0.35);
+}
+
+/* Night High Contrast */
+[data-theme="nightHighContrast"] {
+  --runner-bg: #000000;
+  --runner-bg-subtle: #0A0A0A;
+  --runner-surface: #111111;
+  --runner-surface-elevated: #1A1A1A;
+  --runner-text: #FFFFFF;
+  --runner-text-secondary: #CCCCCC;
+  --runner-text-muted: #888888;
+  --runner-border: #333333;
+  --runner-border-light: #222222;
+  --runner-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  --runner-shadow-md: 0 4px 12px rgba(0,0,0,0.6);
+  --runner-shadow-lg: 0 10px 24px rgba(0,0,0,0.7);
+  --runner-shadow-primary: 0 4px 14px rgba(229,57,53,0.4);
+}
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--runner-bg);
+  color: var(--runner-text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3 {
+  font-family: "Plus Jakarta Sans", "Noto Sans SC", "PingFang SC", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ===== Interactive Elements ===== */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: var(--runner-border);
+  border-radius: 3px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--runner-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(229,57,53,0.3);
+  transition: transform 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.15);
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: inherit;
+}
+
+/* ===== Animations ===== */
+@keyframes pulse-primary {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(229, 57, 53, 0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}
+
+/* ===== Power Save ===== */
+.power-save * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--runner-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--runner-text-muted);
+}

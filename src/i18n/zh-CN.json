@@ -1,0 +1,12 @@
+{
+  "app": { "name": "跑马吗", "slogan": "用对的节奏，跑更远的距离" },
+  "nav": { "home": "首页", "converter": "转换", "cadence": "步频", "editor": "剪辑", "reminder": "提醒", "library": "曲库", "player": "播放", "settings": "设置" },
+  "home": { "welcome": "欢迎来到跑马吗", "subtitle": "专为马拉松跑者打造的智能音乐训练平台", "quickStart": "快速开始", "recentPlay": "最近播放" },
+  "converter": { "title": "格式转换器", "dropHere": "拖拽文件到此处", "selectFiles": "选择文件", "outputFormat": "输出格式", "convert": "开始转换", "downloading": "下载中" },
+  "cadence": { "title": "步频节拍器", "targetSPM": "目标步频", "mode": "匹配模式", "follow": "跟随", "force": "强制", "gradient": "渐变", "overlay": "叠加", "replace": "替换", "beatSound": "节拍音效", "start": "启动", "stop": "停止" },
+  "editor": { "title": "马拉松剪辑器", "addTrack": "添加音轨", "smartArrange": "智能拼接", "export": "导出", "targetDuration": "目标时长", "timeNodes": "时间节点", "interval": "循环训练" },
+  "reminder": { "title": "智能提醒", "addReminder": "添加提醒", "pacePlan": "配速计划", "fuelPlan": "补给计划", "preset": "预设模板", "marathon3h": "全马3小时", "marathon4h": "全马4小时", "marathon5h": "全马5小时", "halfMarathon2h": "半马2小时" },
+  "library": { "title": "曲库", "import": "导入", "allSongs": "全部歌曲", "playlists": "播放列表", "sortByBPM": "按BPM排序", "unknownBPM": "未知BPM" },
+  "player": { "nowPlaying": "正在播放", "next": "下一首", "prev": "上一首", "shuffle": "随机", "loop": "循环", "sequential": "顺序" },
+  "settings": { "title": "设置", "theme": "主题", "darkRunner": "深色跑步", "lightRunner": "浅色跑步", "nightHighContrast": "夜间高对比", "language": "语言", "powerSave": "省电模式", "backup": "备份", "exportBackup": "导出备份", "importBackup": "导入备份", "storage": "存储空间" }
+}
